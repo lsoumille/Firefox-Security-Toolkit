@@ -7,10 +7,14 @@
 # https://github.com/mazen160/Firefox-Security-Toolkit
 ## Author:
 # Mazin Ahmed <mazin AT mazinahmed DOT net>
+## Updated:
+# Lucas Soumille
 ################################################################################
 
 
 ###Change-log:-
+* v1.0: 
+        * Added OS X support
 * v0.6:
         * Added Shodan and RESTED add-ons - Special thanks to Mohammed Diaa @mhmdiaa for the addition.
 * v0.5:

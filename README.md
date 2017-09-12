@@ -15,6 +15,8 @@ Web-Application Penetration Testers, Information Security Learners, and basicall
 # Compatibility #
 The project supports Linux/Unix and OS X environments.
 
+    On OS X, you must download wget using brew for example
+
 # Usage #
 bash ./firefox_security_toolkit.sh
 
