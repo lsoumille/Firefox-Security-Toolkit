@@ -13,7 +13,7 @@ It downloads the most important extensions, and install it on your browser. The 
 Web-Application Penetration Testers, Information Security Learners, and basically anyone interested in web-application security.
 
 # Compatibility #
-The project supports Linux/Unix environments.
+The project supports Linux/Unix and OS X environments.
 
 # Usage #
 bash ./firefox_security_toolkit.sh
@@ -38,19 +38,19 @@ bash ./firefox_security_toolkit.sh
 * IP Address and Domain Information (https://addons.mozilla.org/en-US/firefox/addon/ip-address-and-domain-info/)
 * JavaScript Deobfuscator (https://addons.mozilla.org/en-US/firefox/addon/javascript-deobfuscator/)
 * Live HTTP Headers (https://addons.mozilla.org/en-US/firefox/addon/live-http-headers-fixed-by-dan/)
-* PassiveRecon (https://addons.mozilla.org/en-US/firefox/addon/passiverecon/)
+* PassiveRecon (https://addons.mozilla.org/en-US/firefox/addon/passiverecon/) -> Not Avalaible for Firefox 55 
 * Regular Expressions Tester (https://addons.mozilla.org/en-US/firefox/addon/rext/)
 * RESTED (https://addons.mozilla.org/en-US/firefox/addon/rested/)
 * Right-Click XSS (https://addons.mozilla.org/en-us/firefox/addon/rightclickxss/)
 * Shodan (https://addons.mozilla.org/en-US/firefox/addon/shodan-firefox-addon/)
-* Tamper Data (https://addons.mozilla.org/en-US/firefox/addon/tamper-data/)
+* Tamper Data (https://addons.mozilla.org/en-US/firefox/addon/tamper-data/) -> Not Available for Firefox 55
 * User Agent Switcher (https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher/)
 * Wappalyzer (https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
 * Web Developer (https://addons.mozilla.org/en-us/firefox/addon/web-developer/)
 
 # Additions & Features #
-* Downloading Burp Suite certificate.
-* Downloading a large user-agent list for User-Agent Switcher.
+* Downloading Burp Suite certificate. (Not yet tested on OS X)
+* Downloading a large user-agent list for User-Agent Switcher. (Not yet tested on OS X)
 
 
 # **Legal Disclaimer** #
@@ -66,3 +66,6 @@ The project is licensed under MIT License.
 * Email: *mazin AT mazinahmed DOT net*
 * Twitter: [https://twitter.com/mazen160](https://twitter.com/mazen160)
 * Linkedin: [http://linkedin.com/in/infosecmazinahmed](http://linkedin.com/in/infosecmazinahmed)
+
+# **Contributor** #
+*Lucas Soumille*

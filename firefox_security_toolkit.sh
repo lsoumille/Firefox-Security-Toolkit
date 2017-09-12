@@ -80,7 +80,7 @@ else
 fi
 
 # checking whether Firefox is installed.
-if ! [ -f /usr/bin/firefox ]; then
+if ! [ -f /usr/bin/firefox ] && ! [ -f /Applications/Firefox.app/Contents/MacOS/firefox ]; then
 echo -e "[*] Firefox does not seem to be installed.\n[*]Quitting..."
 exit 1
 fi
@@ -118,7 +118,7 @@ wget "https://addons.mozilla.org/firefox/downloads/latest/copy-as-plain-text/add
 wget "https://addons.mozilla.org/firefox/downloads/latest/web-developer/addon-60-latest.xpi" -o /dev/null -O "$scriptpath/web_developer.xpi"
 
 # Tamper Data
-wget "https://addons.mozilla.org/firefox/downloads/latest/tamper-data/addon-966-latest.xpi" -o /dev/null -O "$scriptpath/tamper_data.xpi"
+#wget "https://addons.mozilla.org/firefox/downloads/latest/tamper-data/addon-966-latest.xpi" -o /dev/null -O "$scriptpath/tamper_data.xpi"
 
 # User-Agent Switcher
 wget "https://addons.mozilla.org/firefox/downloads/latest/user-agent-switcher/addon-59-latest.xpi" -o /dev/null -O "$scriptpath/user_agent_switcher.xpi"
@@ -136,7 +136,7 @@ wget "https://addons.mozilla.org/firefox/downloads/latest/3899/addon-3899-latest
 wget "https://addons.mozilla.org/firefox/downloads/latest/wappalyzer/addon-10229-latest.xpi" -o /dev/null -O "$scriptpath/wappalyzer.xpi"
 
 # PassiveRecon
-wget "https://addons.mozilla.org/firefox/downloads/latest/6196/addon-6196-latest.xpi" -o /dev/null -O "$scriptpath/passiverecon.xpi"
+#wget "https://addons.mozilla.org/firefox/downloads/latest/6196/addon-6196-latest.xpi" -o /dev/null -O "$scriptpath/passiverecon.xpi"
 
 # Cookie Manager+
 wget "https://addons.mozilla.org/firefox/downloads/latest/92079/addon-92079-latest.xpi" -o /dev/null -O "$scriptpath/cookiemanager+.xpi"
@@ -205,7 +205,11 @@ echo -e "[*] Running Firefox to install the add-ons.\n"
 # stopping Firefox if it's running.
 killall firefox &> /dev/null
 #Running it again.
-/usr/bin/firefox "$scriptpath/"*.xpi "$scriptpath/.installation_finished.html" &> /dev/null
+if [[ "$OSTYPE" == "darwin"* ]];then
+	/Applications/Firefox.app/Contents/MacOS/firefox "$scriptpath/"*.xpi "$scriptpath/.installation_finished.html" &> /dev/null
+else
+	/usr/bin/firefox "$scriptpath/"*.xpi "$scriptpath/.installation_finished.html" &> /dev/null
+fi
 ####
 
 # in case you need to delete the tmp directory, uncomment the following line.
