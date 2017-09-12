@@ -15,7 +15,8 @@ Web-Application Penetration Testers, Information Security Learners, and basicall
 # Compatibility #
 The project supports Linux/Unix and OS X environments.
 
-On OS X, you must download wget using brew for example
+On OS X, you must download wget using brew for example.
+
     brew install wget
 
 # Usage #
