@@ -53,8 +53,8 @@ On OS X, you must download wget using brew for example.
 * Web Developer (https://addons.mozilla.org/en-us/firefox/addon/web-developer/)
 
 # Additions & Features #
-* Downloading Burp Suite certificate. (Not yet tested on OS X)
-* Downloading a large user-agent list for User-Agent Switcher. (Not yet tested on OS X)
+* Downloading Burp Suite certificate. (Works on OS X)
+* Downloading a large user-agent list for User-Agent Switcher. (Works on OS X)
 
 
 # **Legal Disclaimer** #
